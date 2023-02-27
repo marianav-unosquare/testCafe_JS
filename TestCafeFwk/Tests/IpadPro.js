@@ -23,7 +23,7 @@ test('My Buy IpadPro test', async t => {
     .expect(Selector('a[id="globalnav-menubutton-link-search"]').visible).ok()
     .click(Selector('a[id="globalnav-menubutton-link-search"]'))
     .typeText('input[class="globalnav-searchfield-input"]', 'iPad Pro')
-    WebGLActiveInfo(3000)
+    .wait(3000)
     .click(Selector('span').withText('iPad Pro'))
     .click(Selector('a').withText('Buy'))
     .expect(Selector(getElementsByXPath('//img')).count).gt(2)

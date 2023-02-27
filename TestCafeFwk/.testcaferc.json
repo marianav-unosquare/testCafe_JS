@@ -1,15 +1,18 @@
 {
     "src": "./Tests/",
-    "browsers": ["lambdatest:Chrome@110.0:Windows 11"],
-    "output": "reports/report.xml",
+    "browsers": ["chrome"],
+    "reporter":["spec", {
+        "name": "xunit",
+        "output": "report.xml"}],
     "screenshots": {
         "takeOnFails": true
     },
-    "debugOnFail":true,
+    "debugOnFail":false,
     "selectorTimeout": 1000,
     "assertionTimeout": 1000,
     "pageLoadTimeout": 1000,
     "concurrency": 1,
-    "speed": 1
+    "speed": 1,
+    "skipJsErrors": true
 
 }

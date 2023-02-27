@@ -4,16 +4,17 @@
     "description": "This is training",
     "main": "TestCafeTrain.js",
     "scripts": {
-      "test": "testcafe"
+        "test": "testcafe"
     },
     "keywords": [
-      "TestCafe",
-      "Automation",
-      "Testing"
+        "TestCafe",
+        "Automation",
+        "Testing"
     ],
     "author": "",
     "license": "ISC",
     "dependencies": {
-      "testcafe": "^1.7.1"
+        "testcafe": "^1.7.1",
+        "testcafe-reporter-xunit": "^2.2.2"
     }
-  }
+}
