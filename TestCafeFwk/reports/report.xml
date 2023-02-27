@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite name="TestCafe Tests: Chrome 110.0.0.0 / Windows 11, Chrome 110.0.0.0 / Windows 11, Chrome 110.0.0.0 / Windows 11, Microsoft Edge 110.0.1587.46 / Windows 11, Microsoft Edge 110.0.1587.46 / Windows 11, Microsoft Edge 110.0.1587.46 / Windows 11" tests="5" failures="3" skipped="0" errors="3" time="81.181" timestamp="Thu, 23 Feb 2023 20:30:07 GMT" >
+  <testcase classname="Getting Started" file="C:\Users\mariana.vives\source\repos\TestCafeFramework\TestCafeFwk\Tests\Google.js" name="TC01 - Google TestCafe  (screenshots: C:\Users\mariana.vives\source\repos\TestCafeFramework\TestCafeFwk\screenshots\2023-02-23_14-28-45\test-1\Microsoft_Edge_110.0.1587.46_Windows_10\errors)" time="50.457">
+    <failure>
+    <![CDATA[
+      1) The specified selector does not match any element in the DOM tree.
+
+          > | Selector('h3')
+            |   .withText('TestCafe')
+
+         Browser: Microsoft Edge 110.0.1587.46 / Windows 10
+         Screenshot: C:\Users\mariana.vives\source\repos\TestCafeFramework\TestCafeFwk\screenshots\2023-02-23_14-28-45\test-1\Microsoft_Edge_110.0.1587.46_Windows_10\errors\2.png
+
+             6 |test('TC01 - Google TestCafe ', async t => {
+             7 |await t
+             8 |    .maximizeWindow()
+             9 |    .typeText('input[name = "q"]', 'Test Cafe Automation')
+            10 |    .pressKey('enter')
+          > 11 |    .click(Selector('h3').withText('TestCafe'))
+            12 |    .click(Selector('a').withAttribute('href',"/documentation/402635/getting-started"))
+            13 |    .expect(Selector('a').withAttribute('class',"active").exists).ok();
+            14 |
+            15 |    
+            16 |
+
+            at <anonymous> (C:\Users\mariana.vives\source\repos\TestCafeFramework\TestCafeFwk\Tests\Google.js:11:6)
+            at asyncGeneratorStep (C:\Users\mariana.vives\source\repos\TestCafeFramework\TestCafeFwk\Tests\Google.js:1:35)
+            at _next (C:\Users\mariana.vives\source\repos\TestCafeFramework\TestCafeFwk\Tests\Google.js:1:35)
+            at <anonymous> (C:\Users\mariana.vives\source\repos\TestCafeFramework\TestCafeFwk\Tests\Google.js:1:35)
+            at <anonymous> (C:\Users\mariana.vives\source\repos\TestCafeFramework\TestCafeFwk\Tests\Google.js:1:35)
+            at <anonymous> (C:\Users\mariana.vives\source\repos\TestCafeFramework\TestCafeFwk\Tests\Google.js:17:2)
+    ]]>
+    </failure>
+  </testcase>
+  <testcase classname="Getting Started" file="C:\Users\mariana.vives\source\repos\TestCafeFramework\TestCafeFwk\Tests\GoogleFailed.js" name="TC01 - Google TestCafe  (screenshots: C:\Users\mariana.vives\source\repos\TestCafeFramework\TestCafeFwk\screenshots\2023-02-23_14-28-45\test-2)" time="52.835">
+    <failure>
+    <![CDATA[
+      1) AssertionError: expected false to be truthy
+
+         Browser: Chrome 110.0.0.0 / Windows 10
+         Screenshot: C:\Users\mariana.vives\source\repos\TestCafeFramework\TestCafeFwk\screenshots\2023-02-23_14-28-45\test-2\Chrome_110.0.0.0_Windows_10\errors\1.png
+
+             8 |    .maximizeWindow()
+             9 |    .typeText('input[name = "q"]', 'Test Cafe Automation')
+            10 |    .pressKey('enter')
+            11 |    .click(Selector('h3').withText('TestCafe'))
+            12 |    .click(Selector('a').withAttribute('href',"/documentation/402635/getting-started"))
+          > 13 |    .expect(Selector('a').withAttribute('class',"activeFAILED").exists).ok();
+            14 |});
+
+            at <anonymous> (C:\Users\mariana.vives\source\repos\TestCafeFramework\TestCafeFwk\Tests\GoogleFailed.js:13:73)
+            at asyncGeneratorStep (C:\Users\mariana.vives\source\repos\TestCafeFramework\TestCafeFwk\Tests\GoogleFailed.js:1:35)
+            at _next (C:\Users\mariana.vives\source\repos\TestCafeFramework\TestCafeFwk\Tests\GoogleFailed.js:1:35)
+            at <anonymous> (C:\Users\mariana.vives\source\repos\TestCafeFramework\TestCafeFwk\Tests\GoogleFailed.js:1:35)
+            at <anonymous> (C:\Users\mariana.vives\source\repos\TestCafeFramework\TestCafeFwk\Tests\GoogleFailed.js:1:35)
+            at <anonymous> (C:\Users\mariana.vives\source\repos\TestCafeFramework\TestCafeFwk\Tests\GoogleFailed.js:14:2)
+
+      2) The specified selector does not match any element in the DOM tree.
+
+          > | Selector('h3')
+            |   .withText('TestCafe')
+
+         Browser: Microsoft Edge 110.0.1587.46 / Windows 10
+         Screenshot: C:\Users\mariana.vives\source\repos\TestCafeFramework\TestCafeFwk\screenshots\2023-02-23_14-28-45\test-2\Microsoft_Edge_110.0.1587.46_Windows_10\errors\2.png
+
+             6 |test('TC01 - Google TestCafe ', async t => {
+             7 |await t
+             8 |    .maximizeWindow()
+             9 |    .typeText('input[name = "q"]', 'Test Cafe Automation')
+            10 |    .pressKey('enter')
+          > 11 |    .click(Selector('h3').withText('TestCafe'))
+            12 |    .click(Selector('a').withAttribute('href',"/documentation/402635/getting-started"))
+            13 |    .expect(Selector('a').withAttribute('class',"activeFAILED").exists).ok();
+            14 |});
+
+            at <anonymous> (C:\Users\mariana.vives\source\repos\TestCafeFramework\TestCafeFwk\Tests\GoogleFailed.js:11:6)
+            at asyncGeneratorStep (C:\Users\mariana.vives\source\repos\TestCafeFramework\TestCafeFwk\Tests\GoogleFailed.js:1:35)
+            at _next (C:\Users\mariana.vives\source\repos\TestCafeFramework\TestCafeFwk\Tests\GoogleFailed.js:1:35)
+            at <anonymous> (C:\Users\mariana.vives\source\repos\TestCafeFramework\TestCafeFwk\Tests\GoogleFailed.js:1:35)
+            at <anonymous> (C:\Users\mariana.vives\source\repos\TestCafeFramework\TestCafeFwk\Tests\GoogleFailed.js:1:35)
+            at <anonymous> (C:\Users\mariana.vives\source\repos\TestCafeFramework\TestCafeFwk\Tests\GoogleFailed.js:14:2)
+    ]]>
+    </failure>
+  </testcase>
+  <testcase classname="Getting Started" file="C:\Users\mariana.vives\source\repos\TestCafeFramework\TestCafeFwk\Tests\IpadPro.js" name="My Buy IpadPro test (screenshots: C:\Users\mariana.vives\source\repos\TestCafeFramework\TestCafeFwk\screenshots\2023-02-23_14-28-45\test-3)" time="62.436">
+    <failure>
+    <![CDATA[
+      1) A JavaScript error occurred on "https://www.apple.com/".
+         Repeat test actions in the browser and check the console for errors.
+         Enable the “skipJsErrors” option to ignore JavaScript errors during test execution. Learn more: "https://testcafe.io/documentation/404038/recipes/debugging/skip-javascript-errors"
+         If the website only throws this error when you test it with TestCafe, please create a new issue at:
+         "https://github.com/DevExpress/testcafe/issues/new?template=bug-report.md".
+
+         JavaScript error details:
+         TypeError: Cannot read properties of undefined (reading 'timeout')
+             at ElementEngagementObserver.endHandler (https://www.apple.com/metrics/ac-analytics/2.17.1/scripts/ac-analytics.js:2:136692)
+             at HTMLElement.dispatchEvent (http://192.168.100.211:55077/hammerhead.js:40382:52)
+             at Proxy.onFlyoutClose (https://www.apple.com/api-www/global-elements/global-header/v1/assets/globalheader.umd.js:43:4345)
+             at $t.__triggerEvent (https://www.apple.com/api-www/global-elements/global-header/v1/assets/globalheader.umd.js:2:23025)
+             at Proxy.value (https://www.apple.com/api-www/global-elements/global-header/v1/assets/globalheader.umd.js:2:19478)
+             at https://www.apple.com/api-www/global-elements/global-header/v1/assets/globalheader.umd.js:2:39125
+             at HTMLLIElement.u (https://www.apple.com/api-www/global-elements/global-header/v1/assets/globalheader.umd.js:2:42191)
+
+         Browser: Chrome 110.0.0.0 / Windows 10
+         Screenshot: C:\Users\mariana.vives\source\repos\TestCafeFramework\TestCafeFwk\screenshots\2023-02-23_14-28-45\test-3\Chrome_110.0.0.0_Windows_10\errors\1.png
+
+            21 |    await t
+            22 |    .maximizeWindow()
+            23 |    .expect(Selector('a[id="globalnav-menubutton-link-search"]').visible).ok()
+            24 |    .click(Selector('a[id="globalnav-menubutton-link-search"]'))
+            25 |    .typeText('input[class="globalnav-searchfield-input"]', 'iPad Pro')
+          > 26 |    .click(Selector('span').withText('iPad Pro'))
+            27 |    .click(Selector('a').withText('Buy'))
+            28 |    .expect(Selector(getElementsByXPath('//img')).count).gt(2)
+            29 |    .expect(Selector('h1').withText('Buy iPad Pro').visible).ok();
+            30 |});
+            31 |
+
+            at <anonymous> (C:\Users\mariana.vives\source\repos\TestCafeFramework\TestCafeFwk\Tests\IpadPro.js:26:6)
+            at asyncGeneratorStep (C:\Users\mariana.vives\source\repos\TestCafeFramework\TestCafeFwk\Tests\IpadPro.js:1:37)
+            at _next (C:\Users\mariana.vives\source\repos\TestCafeFramework\TestCafeFwk\Tests\IpadPro.js:1:37)
+            at <anonymous> (C:\Users\mariana.vives\source\repos\TestCafeFramework\TestCafeFwk\Tests\IpadPro.js:1:37)
+            at <anonymous> (C:\Users\mariana.vives\source\repos\TestCafeFramework\TestCafeFwk\Tests\IpadPro.js:1:37)
+            at <anonymous> (C:\Users\mariana.vives\source\repos\TestCafeFramework\TestCafeFwk\Tests\IpadPro.js:30:2)
+
+      2) A JavaScript error occurred on "https://www.apple.com/".
+         Repeat test actions in the browser and check the console for errors.
+         Enable the “skipJsErrors” option to ignore JavaScript errors during test execution. Learn more: "https://testcafe.io/documentation/404038/recipes/debugging/skip-javascript-errors"
+         If the website only throws this error when you test it with TestCafe, please create a new issue at:
+         "https://github.com/DevExpress/testcafe/issues/new?template=bug-report.md".
+
+         JavaScript error details:
+         TypeError: Cannot read properties of undefined (reading 'timeout')
+             at ElementEngagementObserver.endHandler (https://www.apple.com/metrics/ac-analytics/2.17.1/scripts/ac-analytics.js:2:136692)
+             at HTMLElement.dispatchEvent (http://192.168.100.211:55077/hammerhead.js:40382:52)
+             at Proxy.onFlyoutClose (https://www.apple.com/api-www/global-elements/global-header/v1/assets/globalheader.umd.js:43:4345)
+             at $t.__triggerEvent (https://www.apple.com/api-www/global-elements/global-header/v1/assets/globalheader.umd.js:2:23025)
+             at Proxy.value (https://www.apple.com/api-www/global-elements/global-header/v1/assets/globalheader.umd.js:2:19478)
+             at https://www.apple.com/api-www/global-elements/global-header/v1/assets/globalheader.umd.js:2:39125
+             at HTMLLIElement.u (https://www.apple.com/api-www/global-elements/global-header/v1/assets/globalheader.umd.js:2:42191)
+
+         Browser: Microsoft Edge 110.0.1587.46 / Windows 10
+         Screenshot: C:\Users\mariana.vives\source\repos\TestCafeFramework\TestCafeFwk\screenshots\2023-02-23_14-28-45\test-3\Microsoft_Edge_110.0.1587.46_Windows_10\errors\1.png
+
+            21 |    await t
+            22 |    .maximizeWindow()
+            23 |    .expect(Selector('a[id="globalnav-menubutton-link-search"]').visible).ok()
+            24 |    .click(Selector('a[id="globalnav-menubutton-link-search"]'))
+            25 |    .typeText('input[class="globalnav-searchfield-input"]', 'iPad Pro')
+          > 26 |    .click(Selector('span').withText('iPad Pro'))
+            27 |    .click(Selector('a').withText('Buy'))
+            28 |    .expect(Selector(getElementsByXPath('//img')).count).gt(2)
+            29 |    .expect(Selector('h1').withText('Buy iPad Pro').visible).ok();
+            30 |});
+            31 |
+
+            at <anonymous> (C:\Users\mariana.vives\source\repos\TestCafeFramework\TestCafeFwk\Tests\IpadPro.js:26:6)
+            at asyncGeneratorStep (C:\Users\mariana.vives\source\repos\TestCafeFramework\TestCafeFwk\Tests\IpadPro.js:1:37)
+            at _next (C:\Users\mariana.vives\source\repos\TestCafeFramework\TestCafeFwk\Tests\IpadPro.js:1:37)
+            at <anonymous> (C:\Users\mariana.vives\source\repos\TestCafeFramework\TestCafeFwk\Tests\IpadPro.js:1:37)
+            at <anonymous> (C:\Users\mariana.vives\source\repos\TestCafeFramework\TestCafeFwk\Tests\IpadPro.js:1:37)
+            at <anonymous> (C:\Users\mariana.vives\source\repos\TestCafeFramework\TestCafeFwk\Tests\IpadPro.js:30:2)
+    ]]>
+    </failure>
+  </testcase>
+  <testcase classname="Getting Started" file="C:\Users\mariana.vives\source\repos\TestCafeFramework\TestCafeFwk\Tests\UnosquareBlog.js" name="TC01 - Validate Unosquare&#39;s blog functionality 1 (screenshots: C:\Users\mariana.vives\source\repos\TestCafeFramework\TestCafeFwk\screenshots\2023-02-23_14-28-45\test-4)" time="43.827">
+  </testcase>
+  <testcase classname="Getting Started" file="C:\Users\mariana.vives\source\repos\TestCafeFramework\TestCafeFwk\Tests\UnosquareBlog.js" name="TC02 - Validate Unosquare&#39;s blog functionality 2 (screenshots: C:\Users\mariana.vives\source\repos\TestCafeFramework\TestCafeFwk\screenshots\screenshots\myfullscreenshot.png)" time="28.393">
+  </testcase>
+  <system-out>
+  <![CDATA[
+    Warnings (1):
+    --
+      The file at "C:\Users\mariana.vives\source\repos\TestCafeFramework\TestCafeFwk\screenshots\screenshots\myfullscreenshot.png" already exists. It has just been rewritten with a recent screenshot. This situation can possibly cause issues. To avoid them, make sure that each screenshot has a unique path. If a test runs in multiple browsers, consider including the user agent in the screenshot path or generate a unique identifier in another way.
+  ]]>
+  </system-out>
+</testsuite>

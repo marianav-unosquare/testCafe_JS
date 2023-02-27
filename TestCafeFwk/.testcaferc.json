@@ -1,0 +1,15 @@
+{
+    "src": "./Tests/",
+    "browsers": ["lambdatest:Chrome@110.0:Windows 11"],
+    "output": "reports/report.xml",
+    "screenshots": {
+        "takeOnFails": true
+    },
+    "debugOnFail":true,
+    "selectorTimeout": 1000,
+    "assertionTimeout": 1000,
+    "pageLoadTimeout": 1000,
+    "concurrency": 1,
+    "speed": 1
+
+}
