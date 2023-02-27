@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite name="TestCafe Tests: Chrome 110.0.0.0 / Windows 11" tests="1" failures="0" skipped="0" errors="0" time="57.619" timestamp="Mon, 27 Feb 2023 22:07:55 GMT" >
+  <testcase classname="Getting Started" file="C:\Users\mariana.vives\source\repos\TestCafeFramework\TestCafeFwk\MicrosoftTest\MsTesting.js" name="TC01 -  Ms webpage using hooks" time="57.566">
+  </testcase>
+</testsuite>

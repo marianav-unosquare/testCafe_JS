@@ -10,15 +10,21 @@ class Page {
         this.headerShopSection= Selector('h4').withText('Hardware and Accessories');
         this.headsetShop= Selector('a').withAttribute('aria-label','Microsoft Modern Wireless Headset');
         this.closePopUp= Selector('button').withAttribute('aria-label', 'Cancel');
+        this.selectStayAus= Selector('.btn.btn-primary.btn-block.redirect-reject.preferred-redirect-reject')
         this.addToCart= Selector('button').withAttribute('aria-label', 'Add to cart');
         this.headerCartSection= Selector('h1').withText('Cart');
         this.checkoutBtn= Selector('button').withText('Checkout');
+        this.closeSignMeUp= Selector('button').withAttribute('aria-label','Close dialog window');
+        this.addToCartFinal= Selector('button').withAttribute('class', 'btn.btn-primary.btn-block');
     }
 
     async selectLanguage() {
-        await t
-            .click(this.LanguageSelect)
-            .click(this.EnglishSelect);
+        
+
+        if(await this.LanguageSelect.exists){
+            await t.click(this.LanguageSelect)}
+        
+        await t.click(this.EnglishSelect);
     }
 
     async searchItem(itemName){
@@ -35,14 +41,25 @@ class Page {
         .wait(2000)
         .click(this.headsetShop)
         .wait(2000)
-        if(await this.closePopUp.exists)
-            await t.click(this.closePopUp)
+        if(await this.selectStayAus.exists)
+            await t.click(this.selectStayAus)
+        await t
+        .wait(2000)
+        if(await this.closeSignMeUp.exists){
+                await t.click(this.closeSignMeUp)
+            }
         
         await t
+        .wait(2000)
+        .scroll(0,300)
         .click(this.addToCart)
+        
+
+        await t
+        .wait(5000)
         .expect((this.headerCartSection).visible).ok()
         .expect((this.checkoutBtn).visible).ok();
-
+    
     }
 
 }
